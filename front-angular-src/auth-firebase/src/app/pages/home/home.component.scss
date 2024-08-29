@@ -1,0 +1,15 @@
+.mat-toolbar {
+    display: flex;
+    justify-content: space-between;
+  }
+.iframe-container {
+    height: 100%; /* Ajusta este valor según lo que necesites */
+    width: 100%;
+    position: relative;
+}
+  
+iframe {
+    height: 100%;
+    width: 100%;
+    border: none;
+}

@@ -1,0 +1,84 @@
+ 
+// ::ng-deep .mdc-notched-outline > * {
+//     border-color: green !important;
+//   }
+::ng-deep .mdc-focused .mat-form-field-label {
+    /*change color of label*/
+    color: rgb(0, 11, 0) !important;
+   }
+  
+   ::ng-deep.mat-form-field-underline {
+    /*change color of underline*/
+    background-color: green !important;
+  } 
+  
+  ::ng-deep.mat-form-field-ripple {
+   /*change color of underline when focused*/
+   background-color: green !important;
+  }
+
+  .mdc-text-field__input {
+    -moz-osx-font-smoothing: green;
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--mdc-typography-subtitle1-font-family, var(--mdc-typography-font-family, Roboto, sans-serif));
+    font-size: var(--mdc-typography-subtitle1-font-size, 16px);
+    font-weight: var(--mdc-typography-subtitle1-font-weight, 400);
+    letter-spacing: var(--mdc-typography-subtitle1-letter-spacing, 0.009375em);
+    -webkit-text-decoration: var(--mdc-typography-subtitle1-text-decoration, inherit);
+    text-decoration: var(--mdc-typography-subtitle1-text-decoration, inherit);
+    text-transform: var(--mdc-typography-subtitle1-text-transform, none);
+}
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Asegura que el formulario esté centrado en la pantalla */
+}
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff; /* Color de fondo para el contenedor */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar un poco de profundidad */
+}
+
+.logo {
+  width: 250px; /* Ajusta el tamaño según sea necesario */
+  height: auto;
+  margin-bottom: 20px; /* Espacio debajo del logo */
+}
+
+mat-form-field {
+  width: 100%; /* Asegura que los campos del formulario ocupen todo el ancho */
+}
+
+button {
+  width: 100%; /* Asegura que el botón ocupe todo el ancho */
+  margin-top: 20px; /* Espacio entre el botón y el campo anterior */
+}
+
+hr {
+  width: 100%;
+  margin: 20px 0; /* Espacio antes y después de la línea horizontal */
+}
+
+.providers {
+  margin-bottom: 10px; /* Espacio debajo de la sección de proveedores */
+}
+
+.small-text {
+  display: block;
+  text-align: center;
+  color: #777; /* Color de texto más suave */
+}
+
+.mdc-text-field:not(.mdc-text-field--disabled) .mdc-floating-label {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.black-label {
+  color: black; /* Cambia el color del texto a negro */
+}

@@ -1,0 +1,33 @@
+.button-providers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  button {
+    background: white; /* Cambia el fondo a blanco */
+    font-family: inherit;
+    border: 1px solid green; /* Borde azul de Google */
+    width: 350px;
+    max-width: 500px;
+    color: green; /* Texto en color azul de Google */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    min-height: 48px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all ease-in 0.25s;
+
+    &:hover {
+      background: green; /* Fondo azul al pasar el mouse */
+      color: white; /* Texto en blanco al pasar el mouse */
+    }
+
+    svg {
+      margin-right: 20px;
+      fill: green; /* Icono de Google también en azul */
+    }
+  }
+}

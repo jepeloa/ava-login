@@ -1,0 +1,114 @@
+:root {
+  --background: #ffffff;
+  --green: #45d8b4;
+  --dark-text: rgba(12, 42, 42);
+  --text: #000000;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  background: var(--background);
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  h1 {
+    margin-bottom: 30px;
+  }
+
+  &__container {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  hr {
+    margin: 30px 0;
+  }
+
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+
+  .mdc-button {
+    width: 100%;
+  }
+
+  .small-text {
+    font-size: 14px;
+    display: block;
+    text-align: center;
+
+    &.providers {
+      margin-bottom: 30px;
+    }
+
+    &.log-in-redirect {
+      margin-top: 30px;
+
+      a {
+        color: var(--green);
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+  /* Change the border color */
+.mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__leading,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__notch,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__trailing {
+  border-color: var(--green) !important;
+}
+
+/* Change the border width */
+.mdc-text-field--outlined:not(.mdc-text-field--disabled)
+  .mdc-notched-outline
+  .mdc-notched-outline__leading,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled)
+  .mdc-notched-outline
+  .mdc-notched-outline__notch,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled)
+  .mdc-notched-outline
+  .mdc-notched-outline__trailing {
+  border-width: 1px !important;
+}
+
+/* Change the border focused color */
+.mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused
+  .mdc-notched-outline__leading,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused
+  .mdc-notched-outline__notch,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused
+  .mdc-notched-outline__trailing {
+  border-color: var(--green-text) !important;
+}
+
+/* Change the border hover color */
+.mdc-text-field--outlined:not(.mdc-text-field--disabled):not(.mdc-text-field--focused):hover
+  .mdc-notched-outline
+  .mdc-notched-outline__leading,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled):not(.mdc-text-field--focused):hover
+  .mdc-notched-outline
+  .mdc-notched-outline__notch,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled):not(.mdc-text-field--focused):hover
+  .mdc-notched-outline
+  .mdc-notched-outline__trailing {
+  border-color: var(--green-text) !important;
+}
+.mdc-text-field:not(.mdc-text-field--disabled) .mdc-text-field__input {
+  color: rgba(10, 0, 0, 0.87);
+}
+
+}
